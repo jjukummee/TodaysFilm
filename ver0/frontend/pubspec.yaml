@@ -1,0 +1,30 @@
+name: todays_film
+description: 오늘의 필름 — 하루 회고형 AI 사진 회고 서비스
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 폰트: Noto Sans KR(본문/헤드라인 — 토스 톤) / Nanum Myeongjo(필름 제목 세리프)
+  # 런타임 다운로드 방식. 오프라인 번들이 필요하면 assets로 교체 (README 참고)
+  google_fonts: ^6.2.0
+  # 백엔드 API 통신
+  http: ^1.2.0
+  # 갤러리 접근 (오늘 찍은 사진 그리드)
+  photo_manager: ^3.0.0
+  # 토큰 저장
+  shared_preferences: ^2.2.0
+  # 이미지 선택 폴백(데스크톱/시뮬레이터)
+  image_picker: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
